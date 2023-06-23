@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.outer-circle {
+    width: 30rem;
+    height: 30rem;
+    border: 1px solid rgb(229, 227, 229);
+    border-radius: 50%;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.inner-circle {
+    position: absolute;
+    width: 24rem;
+    height: 24rem;
+    border: 80px solid #202224;
+    border-radius: 50%;
+    margin: 3rem;
+    animation-name: spin;
+    animation-direction: reverse;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin-inner {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.rotate-logo {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    animation-name: spin-logo;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.rotate-logok {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    animation-name: spin-logo;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin-logo {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.apple {
+    top: -15%;
+    left: 34%;
+    right: 0%;
+    right: 0%;
+}
+
+.google {
+    top: 9%;
+    left: 77%;
+    right: 0%;
+    right: 0%;
+}
+
+.netflix {
+    top: 61%;
+    left: 77%;
+    right: 0%;
+    right: 0%;
+}
+
+.microsoft {
+    top: 84%;
+    left: 33%;
+}
+
+.meta {
+    top: 64%;
+    left: -6%;
+    right: 0%;
+    right: 0%;
+}
+
+.amazon {
+    top: 15%;
+    left: -12%;
+    right: 0%;
+    right: 0%;
+}
+
+.ola {
+    top: -32%;
+    left: 14%;
+    right: 0%;
+    right: 0%;
+}
+
+.linkedin {
+    top: 66%;
+    left: 14%;
+    right: 0%;
+    right: 0%;
+}
+
+.flipkart {
+    top: 15%;
+    left: 66%;
+    right: 0%;
+    right: 0%;
+}
+
+.adobe {
+    top: 16%;
+    left: -33%;
+    right: 0%;
+    right: 0%;
+}
